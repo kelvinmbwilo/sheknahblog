@@ -11,16 +11,17 @@
 |
 */
 
-Route::get('/', function()
+Route::get('/', array('as'=>"homepage", function()
 {
 	return View::make('index');
-});
+}));
 
 Route::get('user', function()
 {
     $user = User::where('email',$_GET['email'])->first();
     if ($user  && $user->password == $_GET['password'])
 {
+    Session::put('fname',$user->firstname." ".$user->lastname);
     Redirect::route('adminhome');
 }else{
     return "nope";
@@ -137,3 +138,9 @@ Route::get('admin/addimages',array('as'=>'addimages1',  function(){
 }));
 
 Route::post('admin/addimages',array('as'=>'addimages',  "uses"=>"PostController@index"));
+
+Route::get('admin/logout',array("as"=>"logout",function(){
+    Session::forget('fname');
+     Session::flush();
+     return Redirect::route('homepage');
+}));
