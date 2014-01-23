@@ -1,8 +1,6 @@
 
 <div class="panel panel-default" style="background-image: url(pattern/pattern8.png)">
   <div class="panel-body">
-      <h2>Categories</h2>
-      
       <div class="panel-group" id="accordion">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -15,7 +13,7 @@
     <div id="collapseOne" class="panel-collapse collapse in">
       <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
-        <li><a href="#"><b></b> </a></li>
+        <li><a href="#"><b>All</b> </a></li>
         <li><a href="#">Shirts<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
         <li><a href="#">Trousers<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
         <li><a href="#">Suits <i class='fa fa-chevron-circle-right pull-right'></i></a></li>
@@ -34,7 +32,7 @@
     <div id="collapseTwo" class="panel-collapse collapse">
       <div class="panel-body">
        <ul class="nav nav-pills nav-stacked">
-        <li><a href="#"><b></b> </a></li>
+        <li><a href="#"><b>All</b> </a></li>
         <li><a href="#">Tops<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
         <li><a href="#">Skirts<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
         <li><a href="#">Dresses <i class='fa fa-chevron-circle-right pull-right'></i></a></li>
@@ -54,7 +52,7 @@
     <div id="collapseThree" class="panel-collapse collapse">
       <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
-        <li><a href="#"><b></b> </a></li>
+        <li><a href="#"><b>All</b> </a></li>
         <li><a href="#">Shirts<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
         <li><a href="#">Trousers<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
         <li><a href="#">Gown<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
@@ -74,7 +72,7 @@
     <div id="collapseFour" class="panel-collapse collapse">
       <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
-        <li><a href="#"><b></b> </a></li>
+        <li><a href="#"><b>All</b> </a></li>
         <li><a href="#">Women<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
         <li><a href="#">Men<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
         <li><a href="#">Children<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
@@ -91,7 +89,7 @@
 
 <div class="thumbnail" style="background-image: url(pattern/pattern8.png)">
     <h4 class='text-muted text-center'>Latest Product </h4>
-      {{ HTML::image("img/b2.jpg","",array('class'=>"img-responsive")) }}
+      {{ HTML::image("img/b2.jpg","",array('class'=>"img-responsive img-rounded")) }}
       <div class="caption">
         <h3>Name of Product</h3>
         <p>this is a good shoes for outing and for drinks with friends.</p>

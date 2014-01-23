@@ -3,14 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/kelvin/website/ibg/app/config/database.php</file>
-            <file>file:/home/kelvin/website/ibg/app/views/footer.blade.php</file>
-            <file>file:/home/kelvin/website/ibg/app/views/header.blade.php</file>
-            <file>file:/home/kelvin/website/ibg/app/views/menus.blade.php</file>
-            <file>file:/home/kelvin/website/ibg/public/bootstrap/css/bootstrap.css</file>
+            <file>file:/home/kelvin/website/ibg/app/views/admin/adduser.blade.php</file>
+            <file>file:/home/kelvin/website/ibg/app/views/admin/addsub.blade.php</file>
+            <file>file:/home/kelvin/website/ibg/app/models/Subcategory.php</file>
+            <file>file:/home/kelvin/website/ibg/app/views/admin/managesubcat.blade.php</file>
+            <file>file:/home/kelvin/website/ibg/app/views/admin/editsub.blade.php</file>
+            <file>file:/home/kelvin/website/ibg/public/js/script1.js</file>
+            <file>file:/home/kelvin/website/ibg/app/views/admin/adminmenus.blade.php</file>
+            <file>file:/home/kelvin/website/ibg/app/views/admin/manageUser.blade.php</file>
+            <file>file:/home/kelvin/website/ibg/app/controllers/UserController.php</file>
+            <file>file:/home/kelvin/website/ibg/app/views/admin/edituser.blade.php</file>
             <file>file:/home/kelvin/website/ibg/app/routes.php</file>
             <file>file:/home/kelvin/website/ibg/public/index.php</file>
-            <file>file:/home/kelvin/website/ibg/app/views/layout/master.blade.php</file>
+            <file>file:/home/kelvin/website/ibg/app/controllers/SubcategoryController.php</file>
         </group>
     </open-files>
 </project-private>

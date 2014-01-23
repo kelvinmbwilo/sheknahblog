@@ -19,8 +19,8 @@
         <i class="tag"></i>
       {{ HTML::image("img/b1.jpg") }}
       <div class="caption text-center">
-        <h3>Product Name</h3>
-        <p>this is a good shoes for outing and for drinks with friends.</p>
+          <h3 class="text-muted">Product Name</h3>
+        <p class="text-muted">this is a good shoes for outing and for drinks with friends.</p>
         <p class="text-center"><button class="btn btn-primary btn-xs">Tsh 444 only</button></p>
         
         <div class="fb-share-button pull-right" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -34,9 +34,9 @@
     <div class="col-md-6">
     <div class="thumbnail">
       {{ HTML::image("img/b2.jpg") }}
-      <div class="caption text-center">
-        <h3>Product Name</h3>
-        <p>this is a good shoes for outing and for drinks with friends.</p>
+      <div class="caption text-center text-muted">
+        <h3 class="text-muted">Product Name</h3>
+        <p class="text-muted">this is a good shoes for outing and for drinks with friends.</p>
         <p class="text-center"><button class="btn btn-primary btn-xs">Tsh 444 only</button></p>
         
         <div class="fb-share-button pull-right" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -57,8 +57,8 @@
         
       {{ HTML::image("img/b3.jpg") }}
       <div class="caption text-center">
-        <h3>Product Name</h3>
-        <p>this is a good shoes for outing and for drinks with friends.</p>
+        <h3 class="text-muted">Product Name</h3>
+        <p class="text-muted">this is a good shoes for outing and for drinks with friends.</p>
         <p class="text-center"><button class="btn btn-primary btn-xs">Tsh 444 only</button></p>
         
         <div class="fb-share-button pull-right" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -74,8 +74,8 @@
         <i class="tag"></i>
       {{ HTML::image("img/b4.jpg") }}
       <div class="caption text-center">
-        <h3>Product Name</h3>
-        <p>this is a good shoes for outing and for drinks with friends.</p>
+        <h3 class="text-muted">Product Name</h3>
+        <p class="text-muted">this is a good shoes for outing and for drinks with friends.</p>
         <p class="text-center"><button class="btn btn-primary btn-xs">Tsh 444 only</button></p>
         
         <div class="fb-share-button pull-right" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -105,10 +105,15 @@
 
 <div class="col-xs-12">
     <div class="thumbnail">
-      {{ HTML::image("img/b7.jpg","",array("class"=>"img-responsive","style"=>"width:60%;height:200px")) }}
-      <div class="caption text-center">
-        <h3>Product Name</h3>
+        <div class='col-md-4 col-md-offset-1 text-center text-muted' style="padding-top: 50px">
+            <h3>Product Name</h3>
         <p>this is a good shoes for outing and for drinks with friends.</p>
+        </div>
+        <div class='col-md-5 col-md-offset-1'>
+      {{ HTML::image("img/b7.jpg","",array("class"=>"img-responsive","style"=>"width:50%;height:200px")) }}
+      </div>
+      <div class="caption text-center">
+        
         <p class="text-center"></p>
         <button class="btn btn-primary btn-xs">Tsh 444 only</button>
         <div class="fb-share-button pull-right" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -134,9 +139,9 @@
       
       
       
-      <div class="caption text-center">
-        <h3>Product Name</h3>
-        <p>this is a good shoes for outing and for drinks with friends.</p>
+      <div class="caption text-center text-muted">
+        <h3 class="text-muted">Product Name</h3>
+        <p class="text-muted">this is a good shoes for outing and for drinks with friends.</p>
         <button class="btn btn-primary btn-xs">Tsh 444 only</button>
         <div class="fb-share-button pull-right" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>&nbsp;&nbsp;&nbsp;&nbsp;
    

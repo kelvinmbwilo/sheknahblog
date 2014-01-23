@@ -8,6 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title>IBG Africa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {{ HTML::style("bootstrap/css/bootstrap.css") }}
         {{ HTML::style("bootstrap/css/bootstrap-theme.css") }}
         {{ HTML::style("font-awesome/css/font-awesome.css") }}
@@ -47,6 +48,6 @@ and open the template in the editor.
         
         @include("footer")
         {{ HTML::script("bootstrap/js/bootstrap") }}
-        {{ HTML::script("js/jquery-1.9.1.js") }}
+        {{ HTML::script("js/script1.js") }}
     </body>
 </html>

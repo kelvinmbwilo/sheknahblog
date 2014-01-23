@@ -923,6 +923,8 @@ pre code {
 
 .col-xs-12 {
   width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .col-xs-11 {
@@ -5267,13 +5269,13 @@ a.list-group-item.active > .badge,
 .thumbnail {
   display: block;
   padding: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   line-height: 1.428571429;
   background-color: #ffffff;
   border: 1px solid #dddddd;
-  border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  -webkit-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
 }
 
 .thumbnail > img,
