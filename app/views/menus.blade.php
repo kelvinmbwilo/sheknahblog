@@ -2,6 +2,27 @@
 <div class="panel panel-default" style="background-image: url(pattern/pattern8.png)">
   <div class="panel-body">
       <div class="panel-group" id="accordion">
+          @foreach(Category::all() as $cat )
+               <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ $cat->id }}">
+                      {{ $cat->name }} <i class='fa fa-chevron-circle-right pull-right'></i>
+                    </a>
+                  </h4>
+                </div>
+                 <div id="collapse{{$cat->id }}" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <ul class="nav nav-pills nav-stacked">
+                      <li><a href="#"><b>All</b> </a></li>
+                      @foreach($cat->subcategory as $sub)
+                        <li><a href="#">{{ $sub->name }}<i class='fa fa-chevron-right pull-right'></i></a></li>
+                      @endforeach
+                    </ul>
+                    </div>
+                  </div>
+                </div>
+          @endforeach
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">

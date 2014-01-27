@@ -18,5 +18,9 @@ class Category extends Eloquent {
                 public function post(){
                     return $this->hasMany('Post', 'category', 'id');
                 }
+                
+                public function subcategory(){
+                    return $this->hasMany('Subcategory', 'category', 'id');
+                }
 
 }
