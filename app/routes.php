@@ -63,6 +63,14 @@ Route::get('admin/editcat/{id}',array('as'=>'editcat',  function ($id){
 
 Route::post('admin/deletecat',array('as'=>'deletecat',  function (){
     $cat = Category::find($_POST['id']);
+            foreach ($cat->subcategory as $value)
+        {
+            $value->delete();
+        }
+         foreach ($cat->post as $value)
+        {
+            $value->delete();
+        }
     $cat->delete();
     $cats = Category::all();
     return View::make('admin.managecat',  compact("cats"));
