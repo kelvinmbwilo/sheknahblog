@@ -23,88 +23,9 @@
                   </div>
                 </div>
           @endforeach
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          Men Clothes <i class='fa fa-chevron-circle-right pull-right'></i>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in">
-      <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-        <li><a href="#"><b>All</b> </a></li>
-        <li><a href="#">Shirts<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
-        <li><a href="#">Trousers<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
-        <li><a href="#">Suits <i class='fa fa-chevron-circle-right pull-right'></i></a></li>
-      </ul>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-          Womens  Clothes <i class='fa fa-chevron-circle-right pull-right'></i>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse">
-      <div class="panel-body">
-       <ul class="nav nav-pills nav-stacked">
-        <li><a href="#"><b>All</b> </a></li>
-        <li><a href="#">Tops<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
-        <li><a href="#">Skirts<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
-        <li><a href="#">Dresses <i class='fa fa-chevron-circle-right pull-right'></i></a></li>
-        <li><a href="#">Batique <i class='fa fa-chevron-circle-right pull-right'></i></a></li>
-      </ul>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-          Children Clothes <i class='fa fa-chevron-circle-right pull-right'></i>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-        <li><a href="#"><b>All</b> </a></li>
-        <li><a href="#">Shirts<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
-        <li><a href="#">Trousers<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
-        <li><a href="#">Gown<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
-      </ul>
-      </div>
-    </div>
-  </div>
-          
-   <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-          Shoes <i class='fa fa-chevron-circle-right pull-right'></i>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseFour" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-        <li><a href="#"><b>All</b> </a></li>
-        <li><a href="#">Women<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
-        <li><a href="#">Men<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
-        <li><a href="#">Children<i class='fa fa-chevron-circle-right pull-right'></i></a></li>
-      </ul>
-      </div>
-    </div>
-  </div>
+  
 </div>
       
-    
-
   </div>
 </div>
 
