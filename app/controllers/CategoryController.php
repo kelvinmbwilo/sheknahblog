@@ -30,7 +30,7 @@ class CategoryController extends \BaseController {
 	public function store()
 	{
                   $cat = Category::create(array('name'=>Input::get('value')));
-                  return $cat;
+                  return Redirect::route('managecat');
 	}
 
 	/**
