@@ -11,7 +11,7 @@
       <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
         <li><a href="{{ route('addpost') }}"><i class="fa fa-plus text-muted"></i> Add</a></li>
-        <li><a href="#"><i class="fa fa-cog text-muted"></i> Manage</a></li>
+        <li><a href="{{ route('managepost') }}"><i class="fa fa-cog text-muted"></i> Manage</a></li>
         <li><a href="#">featured</a></li>
       </ul>
       </div>

@@ -39,11 +39,31 @@ Route::get('admin',array("as"=>"adminhome",function()
 //////////////////////////manage posts///////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 Route::get('admin/addpost',array('as'=>'addpost',  function (){
+    
     return View::make('admin.addpost');
 }));
 
-Route::post('admin/addpost',array('as'=>'addpost',  "uses"=>"PostController@store"));
+Route::get('admin/editpost/{id}',array('as'=>'editpost',  function ($id){
+    $post = Post::find($id);
+    return View::make('admin.editpost',  compact("post"));
+}));
 
+Route::get('admin/managepost',array('as'=>'managepost',  function (){
+    $post = Post::all();
+    return View::make('admin.managepost',  compact("post"));
+}));
+
+Route::post('admin/addpost',array('as'=>'addpost1',  "uses"=>"PostController@show"));
+
+Route::post('admin/editpost',array('as'=>'editpost1',  "uses"=>"PostController@edit"));
+
+Route::post('admin/deletepost/{id}',  function ($id){
+    $cat = Post::find($id);
+    unlink(public_path().'/uploads/rooms/'.$cat->img1);
+    ($cat->img2 == "")?"":unlink(public_path().'/uploads/rooms/'.$cat->img2);
+    ($cat->img3 == "")?"":unlink(public_path().'/uploads/rooms/'.$cat->img3);
+    $cat->delete();
+});
 ///////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////manage categories///////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////

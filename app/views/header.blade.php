@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="background-image: url(img/black_paper.png)">
     <div class="container">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
@@ -18,7 +18,7 @@
           <span class="pull-right">
               <i class="fa fa-facebook-square fa-3x text-info"></i> 
               <i class="fa fa-twitter-square fa-3x" style="color: #00C0F7"></i> 
-              <i class="fa fa-instagram fa-3x" style="color: #3D6B92"></i>
+              <i class="fa fa-instagram fa-3x text-danger" ></i>
           </span>
       </div>
 <!--    <ul class="nav navbar-nav">

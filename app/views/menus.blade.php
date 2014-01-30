@@ -1,5 +1,5 @@
 
-<div class="panel panel-default" style="background-image: url(pattern/pattern8.png)">
+<div class="panel panel-default" style="background-image: url({{asset("pattern/pattern8.png")}})">
   <div class="panel-body">
       <div class="panel-group" id="accordion">
           @foreach(Category::all() as $cat )

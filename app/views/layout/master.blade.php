@@ -16,7 +16,7 @@ and open the template in the editor.
         {{ HTML::style("css/css.css") }}
         {{ HTML::script("js/jquery-1.9.1.js") }}
     </head>
-    <body style="background-image: url(pattern/pattern8.png)">
+    <body style="background-image: url({{asset("pattern/pattern16.png")}})">
         
         <!--facebook sdk-->
         <div id="fb-root"></div>
