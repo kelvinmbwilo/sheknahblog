@@ -1,7 +1,10 @@
 @extends("layout.master")
 
 @section('content')
-<h3 class='text-right'>Featured Products</h3>
+<h3 style="margin: 3px">
+    <span class="text-left" style="color: #E9E9E9">Look good..feel good... let your confidence shine..</span>
+    
+</h3>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -15,7 +18,7 @@
         <div class="row">
     
   <div class="col-md-6">
-      <div class="thumbnail" style="background-image: url(img/alu.png)">
+      <div class="thumbnail" style="background-image: url({{ asset("img/alu.png")}})">
         <i class="tag"></i>
       {{ HTML::image("img/b1.jpg","",array("class"=>"img-responsive img-rounded")) }}
       <div class="caption text-center">
@@ -32,7 +35,7 @@
     </div>
   </div>
     <div class="col-md-6">
-    <div class="thumbnail" style="background-image: url(img/alu.png)">
+    <div class="thumbnail" style="background-image: url({{ asset("img/alu.png")}})">
       {{ HTML::image("img/b2.jpg","",array("class"=>"img-responsive img-rounded")) }}
       <div class="caption text-center">
           <h3 class="text-success">Product Name</h3>
@@ -54,7 +57,7 @@
         <div class="row">
     
   <div class="col-md-6">
-      <div class="thumbnail" style="background-image: url(img/alu.png)">
+      <div class="thumbnail" style="background-image: url({{ asset("img/alu.png")}})">
         <i class="tag"></i>
       {{ HTML::image("img/b3.jpg","",array("class"=>"img-responsive img-rounded")) }}
       <div class="caption text-center">
@@ -71,7 +74,7 @@
     </div>
   </div>
     <div class="col-md-6">
-    <div class="thumbnail" style="background-image: url(img/alu.png)">
+    <div class="thumbnail" style="background-image: url({{ asset("img/alu.png")}})">
       {{ HTML::image("img/b4.jpg","",array("class"=>"img-responsive img-rounded")) }}
       <div class="caption text-center">
           <h3 class="text-success">Product Name</h3>
@@ -115,9 +118,9 @@ else
 ?>
 @foreach($post as $po)
    <div class="col-xs-12">
-    <div class="thumbnail" style="background-image: url(img/alu.png)">
+    <div class="thumbnail" style="background-image: url({{ asset("img/alu.png")}})">
         @if($po->img2 == "" && $po->img3 == "")
-                <div class='col-md-4 col-md-offset-1 text-center text-success' style="padding-top: 50px">
+                <div class='col-md-4 col-md-offset-1 text-center' style="padding-top: 50px;color: #24613E">
                     <h3>{{ $po->name }}</h3>
                 <p>{{ $po->discr }}.</p>
 
@@ -127,7 +130,7 @@ else
               </div>
               <div class="caption text-center">
                   <span class="lead pull-left text-danger">{{ date("j M, Y",strtotime($po->created_at)) }}</span>
-                <button class="btn btn-warning btn-sm">{{ $po->price }}</button>
+                <button class="btn btn-primary btn-sm">{{ $po->price }}</button>
                 <div class="fb-share-button pull-right" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>&nbsp;&nbsp;&nbsp;&nbsp;
 
             <a href="https://twitter.com/share" class="twitter-share-button pull-right" data-url="http://fsfsafs">Tweet</a>
@@ -174,6 +177,7 @@ else
       <div class="caption text-center text-success">
         <h3 class="text-success">{{ $po->name }}</h3>
         <p class="text-success">{{ $po->discr }}</p>
+        <span class="lead pull-left text-danger">{{ date("j M, Y",strtotime($po->created_at)) }}</span>
         <button class="btn btn-primary btn-xs">{{ $po->price }}</button>
         <div class="fb-share-button pull-right" data-href="{{ url("post/{$po->id}") }}" data-type="button_count"></div>&nbsp;&nbsp;&nbsp;&nbsp;
    

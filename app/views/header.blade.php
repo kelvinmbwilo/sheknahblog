@@ -1,5 +1,5 @@
-<nav class="navbar navbar-default navbar-static-top" role="navigation" style="background-image: url(img/black_paper.png)">
-    <div class="container">
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="background-color: #BFBFC1/**background-image: url({{asset("pattern/pattern7.png")}})*/">
+    <div class="">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -8,19 +8,12 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">{{ HTML::image('img/logo.jpg','',array('class'=>'img-responsive','style'=>'height:100px;width:250px')) }}</a>
+    <a class="navbar-brand" href="#">{{ HTML::image('img/logo1.png','',array('class'=>'img-responsive img-rounded','style'=>'height:100px')) }}</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <div style="padding-bottom: 25px;padding-top: 10px">
-          <span style="padding-left: 10px">Welcome to IBG Africa Limited</span>
-          <span class="pull-right">
-              <i class="fa fa-facebook-square fa-3x text-info"></i> 
-              <i class="fa fa-twitter-square fa-3x" style="color: #00C0F7"></i> 
-              <i class="fa fa-instagram fa-3x text-danger" ></i>
-          </span>
-      </div>
+      
 <!--    <ul class="nav navbar-nav">
       <li class="active"><a href="#">Link</a></li>
       <li><a href="#">Link</a></li>
@@ -37,17 +30,20 @@
         </ul>
       </li>
     </ul>-->
-    <form class="navbar-form navbar-left" role="search">
+<!--    <form class="navbar-form navbar-left" role="search">
       <div class="form-group">
         <input type="text" class="form-control search-query" placeholder="Search">
       </div>
         <button type="submit" class="btn btn-default btn-primary"><i class="fa fa-search"></i></button>
-    </form>
+    </form>-->
     
-<ul class="nav navbar-nav pull-right">
+<ul class="nav navbar-nav pull-right" style="padding-top: 50px">
     <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
       <li><a href="#"><i class="fa fa-rss"></i> About Us</a></li>
       <li><a href="#"><i class="fa fa-envelope-o"></i> Contacts</a></li>
+      <li><a style="padding-right: 5px" href="https://www.facebook.com/pages/Tomcat-Fashions/1445389765673934?ref=hl"><i class="fa fa-facebook-square fa-2x text-info"></i></a> </li>
+      <li>  <a href="#" style="padding-right: 5px"><i class="fa fa-twitter-square fa-2x" style="color: #00C0F7"></i></a> </li>
+       <li>  <a href="#" style="padding-right: 5px"><i class="fa fa-instagram  text-danger fa-2x" ></i></a></li>
 </ul>
       
 

@@ -2,6 +2,7 @@
 <div class="panel panel-default" style="background-image: url({{asset("pattern/pattern8.png")}})">
   <div class="panel-body">
       <div class="panel-group" id="accordion">
+          
           @foreach(Category::all() as $cat )
                <div class="panel panel-default">
                 <div class="panel-heading">
@@ -14,9 +15,9 @@
                  <div id="collapse{{$cat->id }}" class="panel-collapse collapse">
                     <div class="panel-body">
                       <ul class="nav nav-pills nav-stacked">
-                      <li><a href="#"><b>All</b> </a></li>
+                      <li><a href="{{url("/?cat={$cat->id}")}}"><b>All</b> </a></li>
                       @foreach($cat->subcategory as $sub)
-                        <li><a href="#">{{ $sub->name }}<i class='fa fa-chevron-right pull-right'></i></a></li>
+                        <li><a href="{{url("/?cat={$cat->id}&sub={$sub->id}")}}">{{ $sub->name }}<i class='fa fa-chevron-right pull-right'></i></a></li>
                       @endforeach
                     </ul>
                     </div>
@@ -27,6 +28,10 @@
 </div>
       
   </div>
+</div>
+
+<div class="thumbnail">
+    <div class="fb-like-box" data-href="https://www.facebook.com/pages/Tomcat-Fashions/1445389765673934?ref=hl" data-width="250" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false"></div>
 </div>
 
 <div class="thumbnail" style="background-image: url(pattern/pattern8.png)">
