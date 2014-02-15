@@ -29,9 +29,10 @@ class UserController extends \BaseController {
 	 */
 	public function store()
 	{
-	    $user = User::create(
+	    $users = User::create(
                     array('email'=>Input::get('email'),'firstname'=>Input::get('firstname'),'lastname'=>Input::get('lastname'),'password'=>Input::get('password')));
-    return  $user;
+    $user = User::all();
+    return View::make('admin.manageUser',  compact('user'));
 	}
 
 	/**

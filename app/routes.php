@@ -16,6 +16,11 @@ Route::get('/', array('as'=>"homepage", function()
 	return View::make('index');
 }));
 
+Route::get('post/{id}', array('as'=>"homepage", function($id)
+{
+	return View::make('index');
+}));
+
 Route::get('user', function()
 {
     $user = User::where('email',$_GET['email'])->first();
