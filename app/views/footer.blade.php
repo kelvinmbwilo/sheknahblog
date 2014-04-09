@@ -1,11 +1,11 @@
-<div style="background-image: url(img/black_paper.png)">
+<div style="background-image: url({{ asset('img/black_paper.png') }})">
     <div class="container" style="">
         <div class="row">
             <div class="col-md-3">
                 <ul class="nav nav-pills nav-stacked">
-                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="#"><i class="fa fa-rss"></i> About Us</a></li>
-                    <li><a href="#"><i class="fa fa-envelope-o"></i> Contacts</a></li>
+                    <li><a href="http://shekinahgarden.co.tz"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="http://shekinahgarden.co.tz/?page_id=66"><i class="fa fa-rss"></i> About Us</a></li>
+                    <li><a href="http://shekinahgarden.co.tz/?page_id=55"><i class="fa fa-envelope-o"></i> Contacts</a></li>
                 </ul>
             </div>
             <div class="col-md-6">

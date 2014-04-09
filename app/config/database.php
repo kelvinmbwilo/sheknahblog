@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'ibg',
+			'database'  => 'my_blog',
 			'username'  => 'root',
 			'password'  => 'kevdom',
 			'charset'   => 'utf8',

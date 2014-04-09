@@ -12,7 +12,7 @@
             
         </th>
         <th>
-             Name
+             Title
         </th>
         <th>
            Description
@@ -27,7 +27,7 @@
     @foreach($post as $us)
     <tr>
         <td>{{ $count++ }}</td>
-        <td>{{ HTML::image("uploads/rooms/{$us->img1}","",array("style"=>"width:100px;height:100px")) }}</td>
+        <td>{{ HTML::image("uploads/rooms/{$us->images()->first()->name}","",array("style"=>"width:100px;height:100px")) }}</td>
         
         <td>{{ $us->name }} </td>
           <td>{{ $us->discr }} </td>

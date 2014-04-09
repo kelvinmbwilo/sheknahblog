@@ -33,24 +33,7 @@
       </div>
     </div>
   </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-          Subcategories<i class='fa fa-chevron-circle-right pull-right'></i>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-        <li><a href="{{ route('addsubcat') }}"><i class="fa fa-plus text-muted"></i> Add</a></li>
-        <li><a href="{{ route('managesubcat') }}"><i class="fa fa-cog text-muted"></i> Manage</a></li>
-      </ul>
-      </div>
-    </div>
-  </div>
-          
+
    <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">

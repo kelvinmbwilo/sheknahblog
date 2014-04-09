@@ -18,7 +18,8 @@ Route::get('/', array('as'=>"homepage", function()
 
 Route::get('post/{id}', array('as'=>"homepage", function($id)
 {
-	return View::make('index');
+    $onepost = Post::find($id);
+	return View::make('page',compact("onepost"));
 }));
 
 Route::get('user', function()
@@ -53,6 +54,11 @@ Route::get('admin/editpost/{id}',array('as'=>'editpost',  function ($id){
     return View::make('admin.editpost',  compact("post"));
 }));
 
+Route::get('admin/subaddcat/{id}',array('as'=>'addsubcatt',  function ($id){
+    $subs = Subcategory::where("category",$id)->get();
+    return Form::select('subcategory',$subs->lists('name','id'),'',array('class'=>'form-control'));
+}));
+
 Route::get('admin/managepost',array('as'=>'managepost',  function (){
     $post = Post::all();
     return View::make('admin.managepost',  compact("post"));
@@ -64,9 +70,10 @@ Route::post('admin/editpost',array('as'=>'editpost1',  "uses"=>"PostController@e
 
 Route::post('admin/deletepost/{id}',  function ($id){
     $cat = Post::find($id);
-    unlink(public_path().'/uploads/rooms/'.$cat->img1);
-    ($cat->img2 == "")?"":unlink(public_path().'/uploads/rooms/'.$cat->img2);
-    ($cat->img3 == "")?"":unlink(public_path().'/uploads/rooms/'.$cat->img3);
+    foreach($cat->images as $image){
+        $image->delete();
+        unlink(public_path().'/uploads/rooms/'.$image->name);
+    }
     $cat->delete();
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -88,10 +95,6 @@ Route::get('admin/editcat/{id}',array('as'=>'editcat',  function ($id){
 
 Route::post('admin/deletecat',array('as'=>'deletecat',  function (){
     $cat = Category::find($_POST['id']);
-            foreach ($cat->subcategory as $value)
-        {
-            $value->delete();
-        }
          foreach ($cat->post as $value)
         {
             $value->delete();
@@ -172,8 +175,8 @@ Route::get('admin/addimages',array('as'=>'addimages1',  function(){
 
 Route::post('admin/addimages',array('as'=>'addimages',  "uses"=>"PostController@index"));
 
-Route::get('admin/logout',array("as"=>"logout",function(){
+Route::get('logout',array("as"=>"logout",function(){
     Session::forget('fname');
      Session::flush();
-     return Redirect::route('homepage');
+    return View::make('index');
 }));

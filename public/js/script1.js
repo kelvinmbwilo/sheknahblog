@@ -9,38 +9,7 @@ $(document).ready(function(){
 //        $('#maincontents').html(msg);
 //      });
 //    });
-    $("#error").hide();
-    $("#login").click(function(){
-       if($("#email").val() === ""){
-            $("#email").focus();
-        }else if($("#password").val() === ""){
-        $("#password").focus();
-        }else{
-            
-        //prepare data for a login
-        var email = $("#email").val();
-        var password = $("#password").val();
-        var btn = $(this);
-        $(this).html("<i class='fa fa-spinner fa-spin'></i> login in...");
-        //use ajax method to post the form while displaying the loading image
-        $.ajax({
-            type: "GET",
-            url:'index.php/user',
-            data: { 
-                email: email,
-                password: password
-            }
-          }).done(function( msg ) {
-              if(msg == 'nope'){
-                  $("#error").show("slow");
-                  btn.html("Sign In");
-              }else{
-                  window.location = "index.php/admin"
-              }
-              
-          });
-      }
-    });
+
     
     $(".deletepost").click(function(){
         var id1 = $(this).parent().attr('id');
