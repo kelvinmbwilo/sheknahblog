@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'my_blog',
 			'username'  => 'root',
-			'password'  => 'kevdom',
+			'password'  => 'softmed',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
