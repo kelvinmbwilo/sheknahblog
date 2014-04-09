@@ -1,21 +1,29 @@
 <div style="background-image: url({{ asset('img/black_paper.png') }})">
     <div class="container" style="">
         <div class="row">
-            <div class="col-md-3">
-                <ul class="nav nav-pills nav-stacked">
-                    <li><a href="http://shekinahgarden.co.tz"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="http://shekinahgarden.co.tz/?page_id=66"><i class="fa fa-rss"></i> About Us</a></li>
-                    <li><a href="http://shekinahgarden.co.tz/?page_id=55"><i class="fa fa-envelope-o"></i> Contacts</a></li>
-                </ul>
+            <div class="col-md-3" style="color: cornflowerblue">
+                <h3>Contact Us</h3>
+                <address>
+                    Plot No. 2<br>
+
+                    Mbezi Beach (Makonde)<br>
+
+                    P.O.Box 550<br>
+
+                    Dar-es-Salaam Tz<br>
+
+                    Direct Line: +255 (22) 2627116<br>
+
+                    Office Cell: +255 767 333 239<br>
+
+                    +255 655 627 116<br>
+
+                    +255 765 856 029<br>
+                </address>
             </div>
-            <div class="col-md-6">
-                <h3 class="text-info">Suscribe for our news later</h3>
-                <div class="form-group col-md-8 ">
-                    <label for="exampleInputEmail1" class="text-center text-info">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                    
-                  </div>
-                <div class="col-md-8"><button type="submit" class="btn btn-warning btn-sm">Submit</button></div>
+            <div class="col-md-6" style="padding-top: 5px">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63394.67833954273!2d39.163746999999994!3d-6.7494289999999815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c51c71f6b1b65%3A0x15d397480f1ec5ed!2sShekinah+Garden!5e0!3m2!1sen!2s!4v1397042716686" width="450" height="220" frameborder="0" style="border:0"></iframe>
+
             </div>
             <div class="col-md-3">
                 <ul class="nav nav-pills nav-stacked">

@@ -18,7 +18,7 @@ else
 
 ?>
 <div class="row">
-    <div class="col-md-9">
+    <div class="col-md-8">
 
         <div class="row">
             <div class="col-sm-12" style='padding: 10px; background-image: url({{ asset("img/alu.png")}})'>
@@ -26,10 +26,11 @@ else
                 <div class="row"><span class="pull-right" id="divHeaderLine2">{{ date('j M Y',strtotime($onepost->event_date)) }}</span></div>
             <div class="row">
                 @foreach($onepost->images as $po)
-            <div class="col-sm-6">
-                <img class="img-rounded" width="100%" height="350px" src='{{ asset("uploads/rooms/{$po->name}") }}' />
-                <p style="text-align: center;font-family: Chewy" class="text-center"> {{ $po->discr }}</p>
-            </div>
+                <div style="padding-left: 70px">
+                    <img class="img-rounded" width="450px"  src='{{ asset("uploads/rooms/{$po->name}") }}' />
+                    <p style="text-align: center;font-family: Chewy" class="text-center"> {{ $po->discr }}</p>
+                </div>
+
             @endforeach
             </div>
             <p style="font-family: Maven pro; padding: 10px">{{ $onepost->discr }}</p>
@@ -39,17 +40,21 @@ else
     </div>
 </div>
     </div>
-<div class="col-md-3">
-    <h3 id="divHeaderLine1" style="font-size: 24px">Recent Post</h3>
-    @foreach($post as $po)
-    <img width="100%" height="100px" src="{{ asset("uploads/rooms/{$po->images->first()->name}") }}" />
-    <h4><a href='{{ url("post/{$po->id}") }}' style="font-family: Chewy"> {{ $po->name }} </a> </h4>
-    <h5><a href='{{ url("post/{$po->id}") }}' style="font-family: Chewy"> {{ date('j M Y',strtotime($po->event_date)) }} </a> </h5>
+    <div class="col-md-4">
+        <h3 class="text-center text-success" id="divHeaderLine2">Welcome</h3>
+        <p style="font-family: Maven pro; padding: 10px">Shekinah Gardens, delightfully Tanzanian with a range of hospitality details is proud to be a host of a number of functions 0f your choice. At the garden we strive to attain excellence in making you holistically catered for as far as your recreational and corporate needs are concerned. A hearty welcome!</p>
+        <h3 id="divHeaderLine1" style="font-size: 24px">Recent Post</h3>
+        @foreach(Post::orderBy('created_at','desc')->get()->take(5) as $po)
+        <div style="padding-left: 10%">
+            <img class="img-rounded" width="80%" height="200px" src="{{ asset("uploads/rooms/{$po->images->first()->name}") }}" />
+        </div>
+        <h4 class="text-center"><a href='{{ url("post/{$po->id}") }}' style="font-family: Abel"> {{ $po->name }} </a> </h4>
+        <h5 class="text-center"><a href='{{ url("post/{$po->id}") }}' style="font-family: Abel"> {{ date('j M Y',strtotime($po->event_date)) }} </a> </h5>
 
-    <hr style="color: #000000; height: 2px"/>
-    @endforeach
+        <hr style="color: #000000; height: 2px"/>
+        @endforeach
 
-</div>
+    </div>
 </div>
 
 @stop
