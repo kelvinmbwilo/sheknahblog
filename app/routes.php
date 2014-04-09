@@ -196,5 +196,5 @@ Route::post('admin/addimages',array('as'=>'addimages',  "uses"=>"PostController@
 Route::get('logout',array("as"=>"logout",function(){
     Session::forget('fname');
      Session::flush();
-    return View::make('index');
+    return Redirect::to("/");
 }));

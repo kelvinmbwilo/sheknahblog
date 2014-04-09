@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a0cf80c-d10f-4db8-ae13-559fc73bb0c6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Slideshow.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/manageslide.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/slideshow.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PostController.php" afterPath="$PROJECT_DIR$/app/controllers/PostController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/adminmenus.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/adminmenus.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/slideshow.blade.php" afterPath="$PROJECT_DIR$/app/views/slideshow.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blog.iws" />
@@ -43,15 +39,6 @@
                 <marker date="1390382796000" expanded="true" signature="1273:1535" placeholder="..." />
                 <marker date="1390382796000" expanded="true" signature="1592:1700" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="30" selection-start="6272" selection-end="6272" vertical-scroll-proportion="0.28" vertical-offset="3010" max-vertical-offset="3528">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -124,6 +111,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="slideshow.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/slideshow.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="89" selection-start="181" selection-end="181" vertical-scroll-proportion="0.18480493" vertical-offset="0" max-vertical-offset="594">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="addsub.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/admin/addsub.blade.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -160,7 +156,6 @@
         <option value="$PROJECT_DIR$/app/views/page.blade.php" />
         <option value="$PROJECT_DIR$/app/views/menus.blade.php" />
         <option value="$PROJECT_DIR$/app/views/header.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/slideshow.blade.php" />
         <option value="$PROJECT_DIR$/public/js/script1.js" />
         <option value="$PROJECT_DIR$/app/views/layout/master.blade.php" />
         <option value="$PROJECT_DIR$/app/views/index.blade.php" />
@@ -170,6 +165,7 @@
         <option value="$PROJECT_DIR$/app/views/admin/slideshow.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/manageslide.blade.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/views/slideshow.blade.php" />
       </list>
     </option>
   </component>
@@ -690,13 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/slideshow.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="792">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1458">
@@ -776,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Slideshow.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="207" selection-end="207" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="279" column="31" selection-start="15818" selection-end="15818" vertical-scroll-proportion="-5.740741" vertical-offset="4867" max-vertical-offset="6156">
@@ -830,9 +812,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Slideshow.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="207" selection-end="207" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="30" selection-start="6272" selection-end="6272" vertical-scroll-proportion="0.28" vertical-offset="3010" max-vertical-offset="3528">
+        <state line="198" column="26" selection-start="6736" selection-end="6736" vertical-scroll-proportion="1.828" vertical-offset="2488" max-vertical-offset="3528">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/slideshow.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="89" selection-start="181" selection-end="181" vertical-scroll-proportion="0.18480493" vertical-offset="0" max-vertical-offset="594">
           <folding />
         </state>
       </provider>
