@@ -173,6 +173,24 @@ Route::get('admin/addimages',array('as'=>'addimages1',  function(){
     
 }));
 
+Route::get('admin/slideshow/add',array( function(){
+   return View::make('admin.slideshow');
+}));
+
+Route::get('admin/slideshow',array( function(){
+    $post = Slideshow::orderBy("created_at","DESC")->get();
+    return View::make('admin.manageslide',compact("post"));
+}));
+
+Route::post('admin/deleteslide/{id}',array( function($id){
+    $slide  = Slideshow::find($id);
+    unlink(public_path().'/uploads/slideshow/'.$slide->picture);
+    $slide->delete();
+}));
+
+
+Route::post('admin/slideshow/add',array("uses"=>"PostController@addslideshow"));
+
 Route::post('admin/addimages',array('as'=>'addimages',  "uses"=>"PostController@index"));
 
 Route::get('logout',array("as"=>"logout",function(){
